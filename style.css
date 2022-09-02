@@ -43,7 +43,7 @@ body, html {
   padding-bottom: 20px;
 }
 #header .img {
-  background-image: url(https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.0-9/15036314_1493485110668598_5188823336718441951_n.jpg?_nc_cat=105&_nc_ht=scontent.ftpe4-1.fna&oh=bab9d0aed01e0bd62567a318ae6dc519&oe=5D0E4793);
+  background-image: url(./assets/images/profile.png);
   background-position: center center;
   background-size: contain;
   width: 150px;
@@ -88,6 +88,7 @@ body, html {
 #info {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 13px;
 }
 #info .left_bracket, #info .main_text, #info .right_bracket {
@@ -101,21 +102,19 @@ body, html {
   line-height: 1.6rem;
   padding-top: 17px;
 }
-#info .left_bracket {
+#info .left_bracket, #info .right_bracket {
   width: 50px;
-  height: 150px;
-  margin-right: 15px;
-  background-image: url(https://upload.cc/i1/2019/03/11/RkFods.png);
+  height: 180px;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.2;
+}
+#info .left_bracket {
+  margin-right: 15px;
+  background-image: url(./assets/images/left-bracket.png);
 }
 #info .right_bracket {
-  width: 50px;
-  height: 160px;
   margin-left: 6px;
-  background-image: url(https://upload.cc/i1/2019/03/11/QAXfGE.png);
-  background-size: cover;
-  opacity: 0.4;
+  background-image: url(./assets/images/right-bracket.png);
 }
 
 .dec_dashed {
