@@ -68,7 +68,7 @@ body, html {
   font-size: 35px;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 #header .text .name .identity {
   font-size: 18px;
@@ -84,15 +84,47 @@ body, html {
 #header .text .sub_info .contact {
   font-family: "IBM Plex Serif", serif;
 }
+#header .text .links {
+  opacity: 0.8;
+  margin-top: 15px;
+}
+#header .text .links .link {
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #a7a4a4;
+  overflow: hidden;
+  background-color: #e6e5e5;
+}
+#header .text .links .link:nth-child(2) {
+  margin-left: 15px;
+}
+#header .text .links .link a {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  opacity: 0.9;
+}
+#header .text .links .link a:hover {
+  background-color: orange;
+}
+#header .text .links .link.portfolio a {
+  background-size: 90% 90%;
+  background-image: url(../assets/images/portfolio.png);
+}
+#header .text .links .link.github a {
+  background-size: 120% 120%;
+  background-image: url(../assets/images/github.png);
+}
 
 #info {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 13px;
-}
-#info .left_bracket, #info .main_text, #info .right_bracket {
-  display: inline-block;
 }
 #info .main_text {
   font-size: 15px;
@@ -102,12 +134,6 @@ body, html {
   line-height: 1.6rem;
   padding-top: 17px;
 }
-#info .left_bracket, #info .right_bracket {
-  width: 50px;
-  height: 180px;
-  background-size: cover;
-  opacity: 0.2;
-}
 #info .left_bracket {
   margin-right: 15px;
   background-image: url(./assets/images/left-bracket.png);
@@ -115,6 +141,17 @@ body, html {
 #info .right_bracket {
   margin-left: 6px;
   background-image: url(./assets/images/right-bracket.png);
+}
+
+#info .left_bracket, #info .main_text, #info .right_bracket {
+  display: inline-block;
+}
+
+#info .left_bracket, #info .right_bracket {
+  width: 50px;
+  height: 180px;
+  background-size: cover;
+  opacity: 0.2;
 }
 
 .dec_dashed {
@@ -152,6 +189,15 @@ body, html {
   color: #9C9C9C;
   margin-top: 10px;
 }
+#exp .work::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgba(214, 198, 180, 0.3);
+  position: absolute;
+  left: -30px;
+  top: 11px;
+}
 
 #pro_ability {
   margin-left: 30px;
@@ -185,13 +231,30 @@ body, html {
   font-size: 18px;
   padding: 20px 5px;
 }
-#pro_ability .subtitle .graph .items .text, #pro_ability .subtitle .graph .items .block_group {
-  display: inline-flex;
-}
 #pro_ability .subtitle .graph .items .text {
   width: 130px;
   letter-spacing: 1px;
 }
+#pro_ability .subtitle .graph .items .block_group .block_yes {
+  background-color: #D6C6B4;
+}
+#pro_ability .subtitle .graph .items .block_group .block_none {
+  border: 2px solid #D6C6B4;
+}
+#pro_ability .subtitle::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgba(214, 198, 180, 0.3);
+  position: absolute;
+  left: -30px;
+  top: 11px;
+}
+
+#pro_ability .subtitle .graph .items .text, #pro_ability .subtitle .graph .items .block_group {
+  display: inline-flex;
+}
+
 #pro_ability .subtitle .graph .items .block_group .block_yes, #pro_ability .subtitle .graph .items .block_group .block_none {
   opacity: 0.8;
   display: inline-block;
@@ -200,12 +263,6 @@ body, html {
   border-radius: 5px;
   box-sizing: border-box;
   margin-left: 10px;
-}
-#pro_ability .subtitle .graph .items .block_group .block_yes {
-  background-color: #D6C6B4;
-}
-#pro_ability .subtitle .graph .items .block_group .block_none {
-  border: 2px solid #D6C6B4;
 }
 
 #soft {
@@ -256,11 +313,12 @@ body, html {
   margin-top: 0px;
   width: 325px;
 }
-#soft .content .histogram .axis .learn, #soft .content .histogram .axis .logic {
-  width: 225px;
-}
 #soft .content .histogram .axis .transform {
   width: 300px;
+}
+
+#soft .content .histogram .axis .learn, #soft .content .histogram .axis .logic {
+  width: 225px;
 }
 
 #hobby {
@@ -304,24 +362,4 @@ body, html {
 
 .flex_row {
   display: inline-flex;
-}
-
-#exp .work::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: rgba(214, 198, 180, 0.3);
-  position: absolute;
-  left: -30px;
-  top: 11px;
-}
-
-#pro_ability .subtitle::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: rgba(214, 198, 180, 0.3);
-  position: absolute;
-  left: -30px;
-  top: 11px;
 }
