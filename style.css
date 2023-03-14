@@ -136,11 +136,11 @@ body, html {
 }
 #info .left_bracket {
   margin-right: 15px;
-  background-image: url(../assets/images/left-bracket.png);
+  background-image: url(./assets/images/left-bracket.png);
 }
 #info .right_bracket {
   margin-left: 6px;
-  background-image: url(../assets/images/right-bracket.png);
+  background-image: url(./assets/images/right-bracket.png);
 }
 
 #info .left_bracket, #info .main_text, #info .right_bracket {
